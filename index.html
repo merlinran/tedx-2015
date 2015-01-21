@@ -43,198 +43,103 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h3>单页/手机应用中的</h3>
-          <h2>本地存储与同步</h2>
-          <p>
-            <a href="http://mindhiking.info">Merlin Ran</a> / <a href="http://twitter.com/merlinran">@MerlinRan</a>
-          </p>
-          <p>
-            <small><a href="mailto:merlinran@gmail.com">merlinran@gmail.com</a></small>
-          </p>
+          <h2>TEDxChongqing 2015</h2>
+          <h2>年度策划</h2>
         </section>
 
         <section>
-          <h2>离线不是异常</h2>
+          <h2>过去的2014</h2>
+          <h3>我们创造了多项纪录</h3>
           <ul>
-            <li>隧道</li>
-            <li>野外</li>
-            <li>网络不稳定</li>
-            <li>服务器维护</li>
-            <li>……</li>
+            <li>门票8分钟售qin4</li>
+            <li>500余名观众</li>
+            <li>覆盖5000人</li>
+            <li>累计视频观看50万次</li>
+            <li>《重庆晚报》整版报道</li>
           </ul>
         </section>
 
         <section>
           <section>
-            <h2>缓存</h2>
+            <h2>2015</h2>
+            <h2>我们有更大的梦想</h2>
           </section>
           <section>
-            <h2>应用和资源</h2>
+            <h2>我们要做</h2>
+          </section>
+          <section>
+            <h2>创新思想的舞台</h2>
+            <h2>跨界创新的引擎</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>两场大会</h2>
+          </section>
+          <section>
+            <h2>春季大会</h2>
             <ul>
-              <li>浏览器缓存</li>
-              <li>Application Cache</li>
+              <li>千人规模</li>
+              <li>更充足的内容准备</li>
+              <li>互动体验</li>
+              <li>工作坊/小剧场等多种形式</li>
             </ul>
           </section>
           <section>
-            <h2>数据</h2>
+            <h2>秋季大会</h2>
             <ul>
-              <li>localStorage</li>
-              <li>IndexedDB</li>
-              <li>Web SQL</li>
-              <li>Cordova Plugin</li>
+              <li>两天的日程</li>
+              <li>丰富的社交环节</li>
+              <li>分会场</li>
             </ul>
           </section>
         </section>
 
         <section>
           <section>
-            <h2>本地修改</h2>
-            <ul>
-              <li>微博/QQ/微博</li>
-              <li>Jianshu.io</li>
-            </ul>
-          </section>
-          <section>
-            <h2>自动同步</h2>
-          </section>
-          <section>
-            <h2>PouchDB</h2>
-            <pre><code contenteditable>
-var db = new PouchDB('dbname');
-
-db.put({
-_id: 'dave@gmail.com',
-name: 'David',
-age: 67
-});
-
-db.changes().on('change', function() {
-console.log('Ch-Ch-Changes');
-});
-
-db.replicate.to('http://example.com/mydb');
-            </code></pre>
+            <h2>多场沙龙</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h2>多终端同步</h2>
-            <ul>
-              <li>Tower.im</li>
-            </ul>
+            <h2>TEDxAdventure</h2>
+            <h2>让联结发生！</h2>
           </section>
           <section>
-            <ul>
-              <li>Derby/Racer</li>
-              <li>Meteor</li>
-            </ul>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>No Backend</h2>
-            <ul>
-              <li>Firebase</li>
-              <li>Deployd</li>
-              <li>……</li>
-            </ul>
-          </section>
-          <section>
-            <pre><code contenteditable>
-//CREATE A FIREBASE
-var fb = new Firebase("https://YOUR.firebaseio.com/");
-
-//SAVE DATA
-fb.set({ name: "Alex Wolfe" });
-
-//LISTEN FOR REALTIME CHANGES
-fb.on("value", function(data) {
-var name = data.val() ? data.val().name : "";
-alert("My name is " + name);
-});
-            </code></pre>
+            <h2>走进企业和机构</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h2>数据冲突</h2>
+            <h2>传播</h2>
           </section>
           <section>
-            <h2>加锁</h2>
+            <h2>全年视频播放100万次</h2>
           </section>
           <section>
-            <h2>解决算法</h2>
-            <ul>
-              <li>Differential Synchronization</li>
-              <p>
-                diff
-              </p>
-              <li>Operational Transformation</li>
-              <p>
-                log
-              </p>
-            </ul>
-          </section>
-          <section>
-            <h2>基于Timestamp</h2>
-            <h3>本地修改时间 or 服务器时间？</h3>
+            <h2>卫视报道和播出</h2>
           </section>
         </section>
 
         <section>
           <section>
-            <h2>Offline First</h2>
-          </section>
-          <section>
-            <h2>Hoodie.js</h2>
-            <img src="images/hoodie_logo.png" />
-          </section>
-          <section>
-            <pre><code contenteditable>
-hoodie = new Hoodie();
-hoodie.store.findAll().done(function(pets) {
-$scope.pets = pets;
-});
-
-hoodie.store.on('change', function (eventName, changedObject) {
-$scope.$apply(refresh);
-});
-            </code></pre>
-            <pre><code contenteditable>
-$scope.addPet = function() {
-hoodie.store.add('pets', {name: $scope.newPetName})
-.done(function(newPet) {
-// do nothing
-});
-};
-
-$scope.removePet = function(index) {
-var pet = $scope.pets[index];
-hoodie.store.remove('pets', pet.id)
-.done(function() {
-// do nothing
-});
-};
-            </code></pre>
-          </section>
-          <section>
-            <pre><code contenteditable>
-hoodieArray.bind($scope, 'pets', 'pets');
-
-// another controller
-hoodie.store.on('change:pets', function (eventName, changedObject) {
-  // ...
-});
-            </code></pre>
+            <h2>讲者计划</h2>
           </section>
         </section>
+
         <section>
-          <h2>Let's Discuss!</h2>
-          <img src="images/article-qr-code.png"></img>
-          <p>&</p>
-          <a>https://speakerdeck.com/espylaub/offline-first-web-apps</a>
+          <section>
+            <h2>战略合作</h2>
+          </section>
+          <section>
+            <h2>让企业形象传达给数百万人</h2>
+          </section>
+          <section>
+            <h2>全年独家品牌赞助</h2>
+          </section>
         </section>
       </div>
 
@@ -245,9 +150,9 @@ hoodie.store.on('change:pets', function (eventName, changedObject) {
 
     <script>
 
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
+// Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
       controls: true,
       progress: true,
       history: true,
@@ -262,16 +167,16 @@ hoodie.store.on('change:pets', function (eventName, changedObject) {
 
       // Optional libraries used to extend on reveal.js
       dependencies: [
-      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
       ]
-      });
+    });
 
     </script>
 
-  </body>
-</html>
+    </body>
+    </html>
